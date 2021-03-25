@@ -1,10 +1,137 @@
-# 33-sample
-33期　練習用
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript課題</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-bunsyou henkou shitade
+<body id="top">
+  <header>
+    <div class="wrapper">
+      <h1>JavaScript課題</h1>
+      <button class="menu-btn" id="menu-btn" type="button">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="gnavi" class="gnavi">
+    <ul class="gnavi__list">
+      <li class="gnavi__item"><a href="#kadai01" class="gnavi__link">【課題01】今日は何曜日？</a></li>
+      <li class="gnavi__item"><a href="#kadai02" class="gnavi__link">【課題02】あなたのBMIは？</a></li>
+      <li class="gnavi__item"><a href="#kadai03" class="gnavi__link">【課題03】カルーセルスライドショーをつくってみよう</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="kadai01" class="wrapper">
+      <h2 class="sec-title">【課題01】今日は何曜日？</h2>
+      <form action="#" name="what-day" id="what-day">
+        <p>今日の日付を入力してください</p>
+        <dl>
+          <div class="flex">
+            <dt>西暦 4桁</dt>
+            <dd><input type="number" name="year" id="year" placeholder="例：2020"></dd>
+          </div>
+          <div class="flex">
+            <dt>月</dt>
+            <dd>
+              <select name="month" id="month">
+                <option value="" disabled selected>月を選んでください</option>
+                <option value="1">1月</option>
+                <option value="2">2月</option>
+                <option value="3">3月</option>
+                <option value="4">4月</option>
+                <option value="5">5月</option>
+                <option value="6">6月</option>
+                <option value="7">7月</option>
+                <option value="8">8月</option>
+                <option value="9">9月</option>
+                <option value="10">10月</option>
+                <option value="11">11月</option>
+                <option value="12">12月</option>
+              </select>
+            </dd>
+          </div>
+          <div class="flex">
+            <dt>日 2桁</dt>
+            <dd><input type="number" name="date" id="date" placeholder="例：05"></dd>
+          </div>
+        </dl>
+        <input type="submit" id="result-day" value="結果" class="btn">
+      </form>
+      <p class="sample">例：2020年6月15日は月曜日です</p>
+      <p>結果：<span id="A-01"></span>は<span id="A-02"></span>です</p>
+    </section>
+
+    <section id="kadai02" class="wrapper">
+      <h2 class="sec-title">【課題02】あなたのBMIは？</h2>
+      <form action="#" name="what-bmi" id="what-bmi">
+        <p>身長と体重を入力してください</p>
+        <p>計算式　体重(kg) / (身長(m) * (身長(m)) <br>
+          25以上 肥満気味・18.5～24 標準・18.5未満 痩せすぎ</p>
+        <dl>
+          <div class="flex">
+            <dt>身長 cm</dt>
+            <dd><input type="number" name="cm" id="cm" placeholder="例：160"></dd>
+          </div>
+          <div class="flex">
+            <dt>体重 kg</dt>
+            <dd><input type="number" name="kg" id="kg" placeholder="例：50"></dd>
+          </div>
+        </dl>
+        <input type="submit" id="result-bmi" value="結果" class="btn">
+      </form>
+      <p class="sample">例：あたなのBMIは19.5で標準です。</p>
+      <p>結果：あたなのBMIは<span id="A-03"></span>で<span id="A-04"></span>です</p>
+    </section>
+
+    <section id="kadai03" class="wrapper">
+      <h2 class="sec-title">【課題03】カルーセルスライドショーをつくってみよう</h2>
+      <ul class="slider">
+        <li id="slide-img1"></li>
+        <li id="slide-img2"></li>
+        <li id="slide-img3"></li>
+        <li id="slide-img4"></li>
+        <li id="slide-img5"></li>
+      </ul>
+    </section>
+
+      <!-- テスト用 -->
+      <div id="pic"></div>
+  </main>
+  
+  <footer>
+    <small>&copy; 2020 動的サイトJavaScript課題</small>
+  </footer>
+  
+  <a href="#top" class="top__link" id="page-top">page<br>top</a>
+
+  <script src="js/script.js"></script>
+</body></html>
 
 
-松本もreadme 編集なう
 
-新しくリモートが編集しました。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
